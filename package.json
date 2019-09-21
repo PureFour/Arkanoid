@@ -1,0 +1,23 @@
+{
+  "name": "arkanoid",
+  "version": "0.0.0",
+  "description": "",
+  "main": "sketch.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PureFour/Arkanoid.git"
+  },
+  "author": "Daniel Baziak & Michal Januszek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PureFour/Arkanoid/issues"
+  },
+  "homepage": "https://github.com/PureFour/Arkanoid#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

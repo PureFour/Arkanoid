@@ -24,6 +24,7 @@ function preload() {
   win_sound = new Audio("win_sound.wav");
   lose_sound = new Audio("lose_sound.wav");
 }
+
 function setup() {
   pad = new Pad(
     window_size.width / 2 - 50,
@@ -66,6 +67,7 @@ function draw() {
     }
   } else showMessage("lose");
 }
+
 function GameBar() {
   strokeWeight(4);
   fill(255, 255, 255);
@@ -74,9 +76,11 @@ function GameBar() {
   text("LVL " + lvl, 10, 40);
   line(0, 50, width, 50);
 }
+
 function mouseClicked() {
   balls.push(new Ball(mouseX, mouseY, createVector(0, -4), 20));
 }
+
 function keyPressed() {
   if (keyCode === ESCAPE) {
     game_paused = true;
@@ -112,6 +116,7 @@ function showMessage(message) {
       break;
   }
 }
+
 function mainMenu() {
   if (!start_button) start_button = createButton("Start Game");
   start_button.position(width / 2 - 50, height / 2);
